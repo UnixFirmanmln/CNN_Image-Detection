@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Sule CNN</title>
+</head>
+<body>
+  <!-- partial:index coy .partial.html -->
+  <h2>Test Your Image</h2>
+  <p class="lead">Is that your face, cougar, emu, flaminggo, ibis, pigeon or roaster</p>
+
+  <!-- form Upload e -->
+  <form id="file-upload-form" class="uploader">
+    <input id="file-upload" type="file" name="fileUpload" accept="image/*" />
+
+    <label for="file-upload" id="file-drag">
+      <img id="file-image" src="#" alt="Preview" class="hidden">
+      
+      <div id="start">
+        <i class="fa fa-download" aria-hidden="true"></i>
+        <div>Select a file or drag here</div>
+        <div id="notimage" class="hidden">Please select an image</div>
+        <span id="file-upload-btn" class="btn btn-primary">Select a file</span>
+      </div>
+      
+      <div id="response" class="hidden">
+        <div id="messages"></div>
+        
+        <progress class="progress" id="file-progress" value="0">
+          <span>0</span>%
+        </progress>
+      </div>
+
+      <h2 class="txt-predict">Face</h2>
+    </label>
+
+    <button type="submit" class="btn-predict">Predict</button>
+  </form>
+
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script  src="script.js"></script>
+  
+</body>
+</html>
